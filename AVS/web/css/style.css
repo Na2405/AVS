@@ -1,0 +1,383 @@
+body {
+    width: auto;
+    margin: 0px auto;
+}
+
+
+/*HEADER*/
+.header ul {
+    position: relative;
+}
+
+.header li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+}
+
+.header li:last-child{
+    float: right;
+}
+
+.header li:nth-last-child(2){
+    float: right;
+
+}
+
+#hover:hover {
+    color: pink;
+    font-weight: bold;
+    /*font-size: 40px; vì thay đổi kích thước nên box element's size bị thay đổi làm thay đổi khoảng cách so với ban đầu*/
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px white;
+    cursor: pointer;
+}
+
+#userName{
+    cursor: default;
+}
+.header {
+    overflow: auto;
+    background-color: white;
+}
+
+.header img {
+    cursor: pointer;
+    float: left;
+    width: 125px;
+}
+
+.header #search input {
+    width: 200px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.header #search button {
+    width: 65px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: #29323d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header #search button:hover {
+    background-color: white;
+    color: pink;
+    box-shadow: 5px 10px #888888;
+}
+
+
+.header #account {
+    float: right;
+}
+
+.header #account button {
+    width: 90px;
+    height: 40px;
+    background-color: #29323d;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header #account button:hover {
+    background-color: white;
+    color: pink;
+    box-shadow: 5px 10px #888888;
+}
+.header #account p {
+    clear: inherit;
+    color:black;
+    font-size: 15px;
+}
+.header #account p span{
+    clear: inherit;
+    color:black;
+    font-size: 25px;
+}
+
+.header #account img {
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+.header #account #signout {
+    float: right;
+    width: 10px;
+    height: 10px;
+    padding-top: 0px;
+
+}
+
+/*BANNER*/
+
+.banner {
+    margin-top: 10px;
+    overflow: auto;
+    background-color: #edf0f4;
+}
+
+.banner h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3b4754;
+}
+
+.banner h5 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3b4754;
+}
+
+
+/*MAIN*/
+
+.main {
+    min-height: 700px;
+    position: relative;
+    width: auto;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.main .left {
+    position: absolute;
+    width: 300px;
+    background-color: #edf0f4;
+    float: left;
+    min-height: 800px;
+}
+
+.main .right {
+    overflow: auto;
+    background-color: #edf0f4;
+    margin-top: 10px;
+    margin-left: 310px;
+    min-height: 800px;
+}
+
+.main .right h1 {
+    text-align: center;
+    left: 300px;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3b4754;
+}
+
+.main .right #h5_1 {
+    top: 150px;
+    left: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3b4754;
+    text-align: center;
+}
+
+.main .right #h5_2 {
+    top: 250px;
+    left: 190px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3b4754;
+    text-align: center;
+}
+
+.collapsible {
+    background-color: #edf0f4;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: gray;
+    color: aqua;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+
+
+/*FOOTER*/
+
+#footer {
+    background: white;
+    width: auto;
+    text-align: center;
+    height: 90px;
+    color: white;
+    clear: both;
+    line-height: 60px;
+    margin-top: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#footer #avs {
+    width: 140px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    margin: 15px 15px 15px 15px;
+}
+
+#footer #fb {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 15px 50px 15px auto;
+    cursor: pointer;
+}
+
+p {
+    color: #888888;
+    height: 15px;
+    float: left;
+    margin-left: 30px;
+}
+
+.list_items {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    list-style: none;
+}
+
+.list_items li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.list_items a{
+    color: black;
+}
+
+.list_items a:hover{
+    color: aqua;
+}
+.list_items li:hover{
+    color: aqua;
+}
+.box{
+    position: absolute;
+    width: 300px;
+    padding: 40px;
+    background: #EDF0F4;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+.box h1{
+    font-weight: 350;
+}
+.box #infor{
+    border:0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border:#999999 2px solid ;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+.box #log,#sign{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: #999999 2px solid ;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.25s;
+    color: #ffffff;
+    background: #333333
+}
+.box #gg{
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    transition: 0.25s;
+    width: 120px;
+}
+.box h4{
+    color:#999999;
+    line-height: 0px;
+    font-weight: 10;
+}
+/* .dropdown{
+ position:relative;
+ display:inline-block;
+}
+.button{
+ padding:10px 40px;
+ font-size:20px;
+}
+.drop-content{
+ display:none ;
+ position:absolute;
+ z-index:1;
+ width:120px;
+}
+.drop-content a{
+ display:block;
+ background:#dfdfdf;
+ padding:10px;
+ color:black;
+ text-decoration:none;
+ font-size:20px;
+ margin-top:2px;
+}
+.dropdown:hover .drop-content{
+ display:block;
+}*/

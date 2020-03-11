@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>web/jsp/Detail.jsp</url>
+            <bookmark id="1">
+                <name/>
+                <line>98</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/jsp/footer.jsp</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/css/style.css</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/js/code.js</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/jsp/Detail.jsp</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/css/Visual.css</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/jsp/login.jsp</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/src/java/Controller/DetailController.java</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/js/Sort.js</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/src/java/Model/AlgorithmModel.java</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/src/java/Controller/HomeController.java</file>
+            <file>file:/C:/Users/Asus/Documents/GitHub/AVS/AVS/web/jsp/header.jsp</file>
+        </group>
     </open-files>
 </project-private>

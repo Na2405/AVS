@@ -1,0 +1,45 @@
+Bubble Sort: bubblesort
+
+<table><tr id="line_1"> <td>for (int i = 0; i < array.length - 1; i++) {</td></tr><tr id="line_2"> <td>&emsp;&emsp;for (int j = 0; j < array.length - i - 1; j++) {</td></tr><tr id="line_3"> <td>&emsp;&emsp;&emsp;&emsp;int temp = array[i];</td></tr><tr id="line_4"> <td>&emsp;&emsp;&emsp;&emsp;array[i] = array[j];</td></tr><tr id="line_5"> <td>&emsp;&emsp;&emsp;&emsp;array[j] = temp;</td></tr><tr id="line_6"> <td>&emsp;&emsp;&emsp;&emsp;}</td></tr><tr id="line_7"> <td>&emsp;&emsp;}</td></tr><tr id="line_8"> <td>}</td></tr></table>
+
+Insertion Sort: insertionsort
+
+<table><tr id="line_1"> <td>for (int i = 1; i < arr.length; ++i) {</td></tr><tr id="line_2"> <td>&emsp;&emsp;int key = arr[i];</td></tr><tr id="line_3"> <td>&emsp;&emsp;int j = i - 1;</td></tr><tr id="line_4"> <td>&emsp;&emsp;while (j >= 0 && arr[j] > key) {</td></tr><tr id="line_5"> <td>&emsp;&emsp;&emsp;&emsp;arr[j + 1] = arr[j];</td></tr><tr id="line_6"> <td>&emsp;&emsp;&emsp;&emsp;j = j - 1;</td></tr><tr id="line_7"> <td>&emsp;&emsp;}</td></tr><tr id="line_8"> <td>&emsp;&emsp;arr[j + 1] = key;</td></tr><tr id="line_9"> <td>}</td></tr></table>
+
+Selection Sort: selectionsort
+
+<table><tr id="line_1"><td>for (int i = 0; i < array.length - 1; i++)  {</td></tr><tr id="line_2"><td>&emsp;&emsp;int index = i;</td></tr><tr id="line_3"><td>&emsp;&emsp;for (int j = i + 1; j < array.length; j++){</td></tr><tr id="line_4"><td>&emsp;&emsp;&emsp;&emsp;if (array[j] < array[index]){</td></tr><tr id="line_5"><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;index = j;  </td></tr><tr id="line_6"><td>&emsp;&emsp;&emsp;&emsp;}</td></tr><tr id="line_7"><td>&emsp;&emsp;}</td></tr><tr id="line_8"> <td>&emsp;&emsp;int smallerNumber = array[index];</td></tr><tr id="line_9"> <td>&emsp;&emsp;array[index] = array[i];</td></tr><tr id="line_10"> <td>&emsp;&emsp;array[i] = smallerNumber; </td></tr><tr id="line_11"> <td>}</td></tr></table>
+
+Linear Search: linearsearch
+
+<table><tr id="line_1">  <td>for(int i = 0; i < array.length; i++) {</td></tr><tr id="line_2">  <td>&emsp;&emsp;if(array[i] == x) {</td></tr><tr id="line_3">  <td>&emsp;&emsp;&emsp;&emsp;return i;</td></tr><tr id="line_4">  <td>&emsp;&emsp;} </td></tr><tr id="line_5">  <td>}</td></tr><tr id="line_6">  <td>return -1;</td></tr></table>
+
+Binary Search: binarysearch
+
+<table><tr id="line_1"> <td>int binarySearch(int arr[], int left, int right, int x) { </td></tr><tr id="line_2"> <td>&emsp;&emsp;if (right >= left) {</td></tr><tr id="line_3"> <td>&emsp;&emsp;&emsp;&emsp;int mid = left + (right - l) / 2; </td></tr><tr id="line_4"> <td>&emsp;&emsp;&emsp;&emsp;if (arr[mid] == x) {</td></tr><tr id="line_5"> <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return mid; </td></tr><tr id="line_6"> <td>&emsp;&emsp;&emsp;&emsp;}</td></tr><tr id="line_7"> <td>&emsp;&emsp;&emsp;&emsp;if (arr[mid] > x) {</td></tr><tr id="line_8"> <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return binarySearch(arr, left, mid - 1, x);</td></tr><tr id="line_9"> <td>&emsp;&emsp;&emsp;&emsp;}</td></tr><tr id="line_10"> <td>&emsp;&emsp;&emsp;&emsp;return binarySearch(arr, mid + left, right, x);</td></tr><tr id="line_11"> <td>&emsp;&emsp;} </td></tr><tr id="line_12"> <td>&emsp;&emsp;return -1;</td></tr><tr id="line_13"> <td>}</td></tr></table>
+
+Interpolation Search: interpolationsearch
+
+int interpolationSearch(int x) { 
+        int lo = 0, hi = (arr.length - 1); 
+        while (lo <= hi && x >= arr[lo] && x <= arr[hi]) {         
+  	    if (lo == hi) { 
+                if (arr[lo] == x) {
+			return lo; 
+		}
+                return -1; 
+            } 
+            int pos = lo + (((hi-lo) / 
+                  (arr[hi]-arr[lo]))*(x - arr[lo])); 
+            if (arr[pos] == x) {
+                return pos; 
+	    }
+            if (arr[pos] < x) {
+                lo = pos + 1; 
+            }
+            else {
+                hi = pos - 1; 
+	    }
+        } 
+        return -1; 
+} 

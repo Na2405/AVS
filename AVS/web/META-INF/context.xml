@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DESKTOP-BLOLB7D--><!--quang-->
+<!--LAPTOP-FIFP9IMA--><!--anna chan-->
+<!--DESKTOP-C22NL51--><!--manh-->
+<Context path="/AVS">
+  <Environment name="serverName" type="java.lang.String" value="DESKTOP-C22NL51"/>
+  <Environment name="port" type="java.lang.String" value="1433"/>
+  <Environment name="user" type="java.lang.String" value="sa"/>
+  <Environment name="password" type="java.lang.String" value="123456"/>
+  <Environment name="dbName" type="java.lang.String" value="AVS_Database_Final"/>
+  <Environment name="imgFolder" type="java.lang.String" value="images/"/>
+</Context>
